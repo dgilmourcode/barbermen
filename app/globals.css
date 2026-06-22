@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #FAF9F6;
+  --color-cream-dark: #F0EDE6;
+  --color-bark: #1C1710;
+  --color-bark-light: #2A2118;
+  --color-bark-muted: #7A6E5E;
+  --color-brass: #991B1B;
+  --color-gold: #991B1B;
+  --color-gold-light: #B91C1C;
+  --color-red: #991B1B;
+  --color-red-light: #B91C1C;
+  --color-red-dark: #7F1D1D;
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-dm-sans);
+}
+
+* { -webkit-font-smoothing: antialiased; }
+
+html { background: #FAF9F6; color: #1C1710; }
+
+body { background: #FAF9F6; color: #1C1710; font-family: var(--font-body); }
+
+::selection { background: #991B1B; color: #FAF9F6; }
+
+.accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.accordion-content.open { max-height: 500px; }
+
+.accordion-icon { transition: transform 0.3s ease; }
+.accordion-icon.open { transform: rotate(45deg); }
+
+/* Gradient button utility */
+.btn-gradient {
+  background: linear-gradient(135deg, #991B1B 0%, #B91C1C 50%, #991B1B 100%);
+  background-size: 200% 200%;
+  transition: all 0.3s ease;
+}
+.btn-gradient:hover {
+  background-position: 100% 0;
+  box-shadow: 0 4px 20px rgba(153, 27, 27, 0.3);
+}
+
+/* Hide scrollbar for horizontal scroll */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
