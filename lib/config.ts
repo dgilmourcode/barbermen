@@ -1,10 +1,10 @@
-// Configuração de contatos da Barberman
+// Configuração de contatos da Barbermen
 // Atualizar com dados reais antes de deploy
 
 export const CONTACT = {
   whatsapp: '5586994936797',
   whatsappDisplay: '(86) 99493-6797',
-  email: 'contato@barberman.com.br',
+  email: 'contato@barbermen.com.br',
   address: 'Rua Augusta, 1500 - Consolação',
   city: 'São Paulo, SP',
   instagram: 'https://instagram.com/dgilmourcode',

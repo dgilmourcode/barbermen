@@ -23,7 +23,7 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-bark-muted leading-relaxed">
               <p>
-                Na Barberman, acreditamos que cada homem merece uma experiência
+                Na Barbermen, acreditamos que cada homem merece uma experiência
                 única de cuidado pessoal. Nossos barbeiros são mestres no
                 ofício, combinando técnicas tradicionais com tendências modernas.
               </p>

@@ -4,7 +4,7 @@
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
-# DESIGN SYSTEM - Barberman
+# DESIGN SYSTEM - Barbermen
 
 Never create generic AI websites.
 
@@ -30,7 +30,7 @@ Never create generic AI websites.
 Every page must feel custom made.
 
 ## Brand
-- **Nome**: Barberman
+- **Nome**: Barbermen
 - **Segmento**: Barbearia Premium
 - **Essência**: Tradição meets modernidade. Artesanal, não industrial.
 - **Desde**: 2018
@@ -64,7 +64,9 @@ Every page must feel custom made.
 
 ## Contact Info (placeholder — atualizar com dados reais)
 - WhatsApp: (86) 99493-6797
-- Email: contato@barberman.com.br
-- Endereço: Rua Augusta, 1500 - Consolação, São Paulo, SP
-- Instagram: @barberman
-- TikTok: @barberman
+- Email: dgilmourcode@gmail.com
+- Endereço: Teresina, PI
+- Instagram: @dgilmourcode
+- Linkeding: @dgilmourcode
+- Youtube: @dgilmourcode
+- Site: dgilmourcode.com.br

@@ -161,7 +161,7 @@ export default function Home() {
                 Mais que uma barbearia,<br />um espaço de estilo
               </h2>
               <p className="text-bark-muted leading-relaxed mb-5">
-                Na Barberman, acreditamos que cada homem merece uma experiência
+                Na Barbermen, acreditamos que cada homem merece uma experiência
                 única de cuidado pessoal. Nossos barbeiros são mestres no ofício,
                 combinando técnicas tradicionais com tendências modernas.
               </p>

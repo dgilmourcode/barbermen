@@ -18,8 +18,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Barberman | Barbearia Premium",
-    template: "%s | Barberman",
+    default: "Barbermen | Barbearia Premium",
+    template: "%s | Barbermen",
   },
   description:
     "Experiência masculina premium com os melhores barbeiros da cidade. Tradição, estilo e cuidado em cada detalhe.",

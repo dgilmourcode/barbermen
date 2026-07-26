@@ -100,7 +100,7 @@ export default function ServicosPage() {
             icon={comboIcon}
             services={[
               { name: 'Corte + Barba', description: 'Nosso combo mais popular. Corte completo com degradê ou clássico + barba na navalha.', time: '75 min', price: 'R$ 110' },
-              { name: 'Combo Completo', description: 'Corte + barba + hidratação capilar + lavagem. A experiência completa Barberman.', time: '90 min', price: 'R$ 140' },
+              { name: 'Combo Completo', description: 'Corte + barba + hidratação capilar + lavagem.               A experiência completa Barbermen.', time: '90 min', price: 'R$ 140' },
               { name: 'Corte + Hidratação', description: 'Corte de cabelo + tratamento hidratante com produtos profissionais.', time: '60 min', price: 'R$ 95' },
             ]}
           />
@@ -130,7 +130,7 @@ export default function ServicosPage() {
               Gostou dos nossos serviços?
             </h2>
             <p className="text-cream/50 max-w-md mx-auto mb-8">
-              Agende agora e experimente a diferença Barberman.
+              Agende agora e experimente a diferença Barbermen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/agendar" className="btn-gradient px-8 py-4 text-cream text-sm font-medium tracking-wide active:scale-[0.96] transition-all duration-200">

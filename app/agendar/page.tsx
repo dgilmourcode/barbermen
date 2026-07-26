@@ -43,7 +43,7 @@ function buildWhatsAppMessage(form: FormData): string {
     ? new Date(form.date + 'T12:00').toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })
     : ''
   return encodeURIComponent(
-    `Oi! Gostaria de agendar um horário na Barberman.\n\n` +
+     `Oi! Gostaria de agendar um horário na Barbermen.\n\n` +
     `*Serviço:* ${form.service}\n` +
     `*Profissional:* ${form.professional}\n` +
     `*Data:* ${dateFormatted}\n` +
@@ -111,11 +111,11 @@ export default function AgendarPage() {
     const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
 
     if (isMobile && navigator.share && navigator.canShare) {
-      const file = new File([blob], 'agendamento-barberman.png', { type: 'image/png' })
+        const file = new File([blob], 'agendamento-barbermen.png', { type: 'image/png' })
       if (navigator.canShare({ files: [file] })) {
         try {
           await navigator.share({
-            title: 'Meu Agendamento - Barberman',
+            title: 'Meu Agendamento - Barbermen',
             text: `Agendamento confirmado!\n${form.service} com ${form.professional}`,
             files: [file],
           })
@@ -134,7 +134,7 @@ export default function AgendarPage() {
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = 'agendamento-barberman.png'
+      a.download = 'agendamento-barbermen.png'
     a.click()
     URL.revokeObjectURL(url)
   }
@@ -144,7 +144,7 @@ export default function AgendarPage() {
       ? new Date(form.date + 'T12:00').toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
       : ''
 
-    const shareText = `Agendamento Barberman\n${form.service} com ${form.professional}\n${dateFormatted} às ${form.time}`
+    const shareText = `Agendamento Barbermen\n${form.service} com ${form.professional}\n${dateFormatted} às ${form.time}`
     const shareUrl = `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(shareText)}`
 
     const handleCopy = async () => {
@@ -194,7 +194,7 @@ export default function AgendarPage() {
                       Barbearia Premium
                     </div>
                     <div style={{ fontSize: 32, fontWeight: 700, color: '#1C1710', letterSpacing: '-0.5px', lineHeight: 1 }}>
-                      Barber<span style={{ color: '#991B1B' }}>Man</span>
+                       Barber<span style={{ color: '#991B1B' }}>men</span>
                     </div>
                     <div style={{ fontSize: 10, color: '#999', marginTop: 8, letterSpacing: '0.15em' }}>
                       CONFIRMAÇÃO DE AGENDAMENTO

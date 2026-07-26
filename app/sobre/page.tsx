@@ -91,7 +91,7 @@ export default function SobrePage() {
               <div className="w-10 h-px bg-red mb-6" />
               <div className="space-y-4 text-bark-muted leading-relaxed">
                 <p>
-                  A Barberman nasceu da paixão por transformar o simples ato de cortar
+                  A Barbermen nasceu da paixão por transformar o simples ato de cortar
                   cabelo em uma experiência memorável. Fundada em 2018, começamos como
                   uma pequena barbearia de bairro com um sonho grande.
                 </p>
@@ -211,7 +211,7 @@ export default function SobrePage() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
           >
             <h2 className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,3.5vw,2.8rem)] font-semibold text-cream tracking-tight mb-4">
-              Pronto para conhecer a Barberman?
+              Pronto para conhecer a Barbermen?
             </h2>
             <p className="text-cream/50 max-w-md mx-auto mb-8">
               Venha nos visitar ou agende seu horário pelo WhatsApp.

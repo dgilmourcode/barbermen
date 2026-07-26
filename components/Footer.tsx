@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { CONTACT } from '@/lib/config'
 
@@ -26,10 +27,10 @@ export default function Footer() {
           className="grid md:grid-cols-3 gap-12"
         >
           <motion.div variants={fadeUp}>
-            <Link href="/" className="font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight">
-              Barber<span className="text-red">Man</span>
+            <Link href="/" className="inline-flex items-center mb-4">
+              <Image src="/logo.svg" alt="Barbermen" width={140} height={28} className="h-7 w-auto brightness-0 invert" />
             </Link>
-            <p className="text-sm text-cream/50 mt-4 leading-relaxed max-w-xs">
+            <p className="text-sm text-cream/50 mt-2 leading-relaxed max-w-xs">
               A melhor barbearia da cidade. Tradição, estilo e cuidado em cada detalhe.
             </p>
           </motion.div>
@@ -58,7 +59,7 @@ export default function Footer() {
       <div className="border-t border-cream/10">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-cream/30">
-            © 2026 Barberman. Todos os direitos reservados.
+            © 2026 Barbermen. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
             <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" className="text-xs text-cream/30 hover:text-red-light transition-colors duration-200">

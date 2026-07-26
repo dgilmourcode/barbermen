@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -42,8 +43,8 @@ export default function Header() {
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="font-[family-name:var(--font-display)] text-lg font-semibold text-bark tracking-tight">
-            Barber<span className="text-red">Man</span>
+          <Link href="/" className="flex items-center">
+            <Image src="/logo.svg" alt="Barbermen" width={140} height={28} className="h-7 w-auto" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

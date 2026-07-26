@@ -35,7 +35,7 @@ export default function Navbar() {
               Barber
             </span>
             <span className="font-[family-name:var(--font-display)] text-xl font-semibold text-brass tracking-tight">
-              Man
+              men
             </span>
           </a>
 

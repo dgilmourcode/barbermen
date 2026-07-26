@@ -1,9 +1,9 @@
-# SKILL.md — Barberman Design & Motion
+# SKILL.md — Barbermen Design & Motion
 
-> Use quando criando ou melhorando componentes, páginas ou animações para o projeto Barberman.
+> Use quando criando ou melhorando componentes, páginas ou animações para o projeto Barbermen.
 
 ## Quando Usar
-- Criar/editar componentes UI do barberman
+- Criar/editar componentes UI do barbermen
 - Adicionar animações com Framer Motion
 - Melhorar layout, tipografia ou cores
 - Implementar scroll reveals, parallax, text reveals

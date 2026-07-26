@@ -1,4 +1,4 @@
-# DESIGN.md — Barberman Design System
+# DESIGN.md — Barbermen Design System
 
 > Barbearia premium. Artesanal. Nada de "template de IA".
 

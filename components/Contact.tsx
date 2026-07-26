@@ -57,7 +57,7 @@ export default function Contact() {
                     </svg>
                   ),
                   label: 'Email',
-                  value: 'contato@barberman.com.br',
+                   value: 'contato@barbermen.com.br',
                 },
               ].map((item) => (
                 <div key={item.label} className="flex gap-4">
