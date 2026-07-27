@@ -54,8 +54,8 @@ Migrar o projeto Barbermen de Next.js 16 para Astro 4.0 mantendo todas as funcio
 - [x] Adicionar suporte a metatags SEO
 - [x] Implementar sitemap.xml dinâmico
 - [x] Adicionar robots.txt
-- [ ] Testar responsividade e performance
-- [ ] Build final e validação
+- [x] Testar responsividade e performance
+- [x] Build final e validação
 
 ## Critérios de Aceitação
 - Todas as páginas funcionais idênticas ao original
