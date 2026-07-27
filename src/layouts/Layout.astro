@@ -1,0 +1,31 @@
+---
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import SmoothScroll from "../components/SmoothScroll";
+import SEO from "./SEO.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Barbermen | Barbearia Premium",
+  description = "Experiência masculina premium com os melhores barbeiros da cidade. Tradição, estilo e cuidado em cada detalhe.",
+} = Astro.props;
+---
+
+<html lang="pt-BR">
+  <head>
+    <SEO title={title} description={description} />
+  </head>
+  <body class="min-h-screen flex flex-col bg-cream text-bark antialiased" style="font-family: var(--font-dm-sans), 'DM Sans', sans-serif;">
+    <Header client:load />
+    <SmoothScroll client:load>
+      <main class="flex-1">
+        <slot />
+      </main>
+    </SmoothScroll>
+    <Footer client:load />
+  </body>
+</html>

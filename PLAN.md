@@ -17,32 +17,37 @@ Migrar o projeto Barbermen de Next.js 16 para Astro 4.0 mantendo todas as funcio
 - [x] Criar CLAUDE.md com stack técnico atualizado
 - [x] Criar TODO.md para tracking
 - [x] Criar estrutura de diretórios Astro
-- [ ] Instalar Astro com TypeScript e Tailwind
-- [ ] Configurar tsconfig.json para Astro
-- [ ] Migrar tailwind.config e postcss.config
+- [x] Criar branch separada `feat/migrate-astro` para migração
+- [x] Instalar Astro com TypeScript e Tailwind
+- [x] Configurar tsconfig.json para Astro
+- [x] Migrar tailwind.config e postcss.config
+- [x] Configurar astro.config.mjs com integrações necessárias
 
 ### Fase 2: Conversão de Layout e Componentes
-- [ ] Converter layout.tsx para Astro layout
-- [ ] Migrar globals.css paraAstro
-- [ ] Converter componentes reutilizáveis (Header, Footer, etc)
-- [ ] Adaptar uso de next/link para padrões Astro
-- [ ] Mantem Framer Motion e GSAP nos componentes
+- [x] Converter layout.tsx para Astro layout
+- [x] Migrar globals.css paraAstro
+- [x] Converter componentes reutilizáveis (Header, Footer, etc)
+- [x] Adaptar uso de next/link para padrões Astro
+- [x] Manter Framer Motion e GSAP nos componentes
 
 ### Fase 3: Conversão de Páginas
-- [ ] Converter app/page.tsx (Home) para src/pages/index.astro
-- [ ] Converter app/sobre/page.tsx para src/pages/sobre.astro
-- [ ] Converter app/servicos/page.tsx para src/pages/servicos.astro
-- [ ] Converter app/galeria (criar nova página) para src/pages/galeria.astro
-- [ ] Converter app/contato/page.tsx para src/pages/contato.astro
-- [ ] Converter app/agendar/page.tsx para src/pages/agendar.astro
+- [x] Converter app/page.tsx (Home) para src/pages/index.astro
+- [x] Converter app/sobre/page.tsx para src/pages/sobre.astro
+- [x] Converter app/servicos/page.tsx para src/pages/servicos.astro
+- [x] Converter app/galeria (criar nova página) para src/pages/galeria.astro
+- [x] Converter app/contato/page.tsx para src/pages/contato.astro
+- [x] Converter app/agendar/page.tsx para src/pages/agendar.astro
 
 ### Fase 4: Integração e Funcionalidades
-- [ ] Implementar navegation.ts equivalente em Astro
-- [ ] Manter funcionalidade de scroll suave
-- [ ] Preservar lógica de header fixo/transparente
-- [ ] Manter menu mobile com animações
-- [ ] Preservar integração com WhatsApp para agendamentos
-- [ ] Manter variáveis de configuração (lib/config.ts)
+- [x] Implementar navegation.ts equivalente em Astro
+- [x] Manter funcionalidade de scroll suave
+- [x] Preservar lógica de header fixo/transparente
+- [x] Manter menu mobile com animações
+- [x] Preservar integração com WhatsApp para agendamentos
+- [x] Manter variáveis de configuração (lib/config.ts)
+- [x] Implementar scroll suave global (Lenis)
+- [x] Adicionar SEO dinâmico por página
+- [x] Configurar sitemap e robots
 
 ### Fase 5: Otimização e Testes
 - [ ] Implementar otimização de imagens Astro
