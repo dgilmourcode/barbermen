@@ -6,7 +6,7 @@ import Link from '@/components/Link';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const } },
 };
 
 const stagger = {
@@ -32,7 +32,7 @@ export default function Home() {
             <motion.span
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] as const }}
               className="text-xs font-medium tracking-[0.25em] uppercase text-brass mb-5 block"
             >
               Barbearia Premium · Desde 2018
@@ -41,7 +41,7 @@ export default function Home() {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] as const }}
               className="font-[family-name:var(--font-display)] text-[clamp(2.8rem,6vw,4.8rem)] font-semibold text-bark leading-[1.05] tracking-tight mb-6"
             >
               Onde o corte<br />vira experiência
@@ -50,7 +50,7 @@ export default function Home() {
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
               className="text-bark-muted text-lg leading-relaxed max-w-md mb-10"
             >
               Os melhores barbeiros da cidade em um ambiente feito para você.
@@ -60,7 +60,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.6, delay: 0.65, ease: [0.16, 1, 0.3, 1] as const }}
               className="flex flex-col sm:flex-row gap-4"
             >
               <Link href="/agendar" className="btn-gradient px-8 py-4 text-cream text-sm font-medium tracking-wide active:scale-[0.96] transition-all duration-200 text-center">
@@ -108,7 +108,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as const }}
             className="text-center mb-14"
           >
             <span className="text-xs font-medium tracking-[0.25em] uppercase text-brass mb-3 block">Serviços</span>
@@ -153,7 +153,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -24 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-80px' }}
-              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
             >
               <span className="text-xs font-medium tracking-[0.25em] uppercase text-brass mb-3 block">Sobre Nós</span>
               <h2 className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,3.5vw,2.8rem)] font-semibold text-bark leading-tight tracking-tight mb-5">
@@ -199,7 +199,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
           >
             <h2 className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,3.5vw,2.8rem)] font-semibold text-cream tracking-tight mb-4">
               Pronto para uma experiência única?
@@ -216,3 +216,4 @@ export default function Home() {
     </>
   )
 }
+

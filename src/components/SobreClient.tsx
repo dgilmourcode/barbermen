@@ -6,7 +6,7 @@ import Link from '@/components/Link';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const } },
 };
 
 const stagger = {
@@ -78,7 +78,7 @@ export default function SobreClient() {
               initial={{ opacity: 0, x: 24 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-80px' }}
-              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
               className="lg:sticky lg:top-28"
             >
               <span className="text-xs font-medium tracking-[0.25em] uppercase text-red mb-3 block">Nossa História</span>
@@ -122,7 +122,7 @@ export default function SobreClient() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as const }}
             className="text-center mb-14"
           >
             <h2 className="font-[family-name:var(--font-display)] text-2xl font-semibold text-bark">
@@ -166,7 +166,7 @@ export default function SobreClient() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as const }}
             className="text-center mb-14"
           >
             <h2 className="font-[family-name:var(--font-display)] text-2xl font-semibold text-bark">Nossa Equipe</h2>
@@ -205,7 +205,7 @@ export default function SobreClient() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
           >
             <h2 className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,3.5vw,2.8rem)] font-semibold text-cream tracking-tight mb-4">
               Pronto para conhecer a Barbermen?
@@ -227,3 +227,4 @@ export default function SobreClient() {
     </>
   )
 }
+

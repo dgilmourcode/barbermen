@@ -162,7 +162,7 @@ export default function AgendarClient() {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
             >
               <div className="w-14 h-14 rounded-full bg-brass/10 flex items-center justify-center mx-auto mb-6">
                 <svg className="w-6 h-6 text-brass" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -314,7 +314,7 @@ export default function AgendarClient() {
                 initial={{ opacity: 0, scale: 0.95, y: 10 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 10 }}
-                transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] as const }}
                 onClick={(e) => e.stopPropagation()}
                 className="bg-cream border border-bark/10 w-full max-w-sm p-6"
               >
@@ -422,7 +422,7 @@ export default function AgendarClient() {
             initial={{ opacity: 0, x: 12 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -12 }}
-            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as const }}
           >
             {step === 1 && (
               <div className="space-y-6">
@@ -515,3 +515,4 @@ export default function AgendarClient() {
     </>
   )
 }
+

@@ -13,10 +13,10 @@ export default defineConfig({
   },
   vite: {
     resolve: {
-    alias: {
-      '@': path.resolve('./src'),
-      '~': path.resolve('.'),
-    },
+      alias: {
+        '@': path.resolve('./src'),
+        '~': path.resolve('.'),
+      },
     },
   },
 });
