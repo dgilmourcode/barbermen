@@ -18,5 +18,13 @@ export default defineConfig({
         '~': path.resolve('.'),
       },
     },
+    optimizeDeps: {
+      include: ['framer-motion', 'lenis'],
+    },
+    server: {
+      fs: {
+        allow: ['.'],
+      },
+    },
   },
 });
