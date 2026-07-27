@@ -7,13 +7,21 @@ import { CONTACT } from '@/lib/config';
 const links = [
   { label: 'Início', href: '/' },
   { label: 'Serviços', href: '/servicos' },
-  { label: 'Sobre', href: '/sobre' },
+  { label: 'Quem Somos', href: '/quem-somos' },
   { label: 'Contato', href: '/contato' },
 ];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [pathname, setPathname] = useState('');
+
+  useEffect(() => {
+    setPathname(window.location.pathname);
+    const onPopState = () => setPathname(window.location.pathname);
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -26,6 +34,8 @@ export default function Header() {
     window.addEventListener('popstate', handleRouteChange);
     return () => window.removeEventListener('popstate', handleRouteChange);
   }, []);
+
+  const isLinkActive = (href: string) => pathname === href;
 
   return (
     <>
@@ -46,7 +56,7 @@ export default function Header() {
 
           <nav className="hidden md:flex items-center gap-8">
             {links.map((link) => {
-              const isActive = typeof window !== 'undefined' && window.location.pathname === link.href;
+              const isActive = isLinkActive(link.href);
               return (
                 <a
                   key={link.href}
@@ -124,15 +134,15 @@ export default function Header() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1 + i * 0.05, duration: 0.3 }}
                   >
-                    <a
-                      href={link.href}
-                      onClick={() => setMobileOpen(false)}
-                      className={`block py-3 text-sm font-medium tracking-wide transition-colors duration-200 border-b border-bark/5 ${
-                        window.location.pathname === link.href
-                          ? 'text-red'
-                          : 'text-bark-muted hover:text-red'
-                      }`}
-                    >
+                     <a
+                       href={link.href}
+                       onClick={() => setMobileOpen(false)}
+                       className={`block py-3 text-sm font-medium tracking-wide transition-colors duration-200 border-b border-bark/5 ${
+                         isLinkActive(link.href)
+                           ? 'text-red'
+                           : 'text-bark-muted hover:text-red'
+                       }`}
+                     >
                       {link.label}
                     </a>
                   </motion.div>

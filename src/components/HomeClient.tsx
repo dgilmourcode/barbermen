@@ -164,7 +164,7 @@ export default function Home() {
                 única de cuidado pessoal. Nossos barbeiros são mestres no ofício,
                 combinando técnicas tradicionais com tendências modernas.
               </p>
-              <Link href="/sobre" className="text-sm font-medium text-red hover:text-red-dark transition-colors duration-200">
+              <Link href="/quem-somos" className="text-sm font-medium text-red hover:text-red-dark transition-colors duration-200">
                 Conheça nossa história →
               </Link>
             </motion.div>

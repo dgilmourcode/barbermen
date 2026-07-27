@@ -2,7 +2,7 @@ export async function GET({ site }: { site?: URL }) {
   const base = site || new URL("https://barbermen.com.br");
   const pages = [
     { url: "/", priority: 1.0, changefreq: "weekly" },
-    { url: "/sobre", priority: 0.8, changefreq: "monthly" },
+    { url: "/quem-somos", priority: 0.8, changefreq: "monthly" },
     { url: "/servicos", priority: 0.8, changefreq: "weekly" },
     { url: "/contato", priority: 0.6, changefreq: "monthly" },
     { url: "/agendar", priority: 0.9, changefreq: "weekly" },

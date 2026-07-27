@@ -9,7 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/react": "^6.0.1",
+    "@astrojs/react": "^4.4.2",
     "@tailwindcss/vite": "^4.3.3",
     "framer-motion": "^12.40.0",
     "html2canvas": "^1.4.1",
@@ -24,6 +24,7 @@
     "@types/react-dom": "^19.2.3",
     "astro": "^5.7.8",
     "eslint": "^9",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4.3.3",
     "typescript": "^5"
   }
