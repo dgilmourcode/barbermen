@@ -1,41 +1,37 @@
 # Barbermen - TODO e Changelog
 
 ## Status Atual
-Projeto migrando de Next.js 16 para Astro 4.0  
-**WebStudio configurado** em `C:\WebStudio` com app `barbermen-preview`  
-**Design System** definido em DESIGN.md, SKILL.md, AGENTS.md
+Projeto migrado para **Astro 5** + **React 19** + **Tailwind CSS 4**  
+**Design System** definido em `AGENTS.md`
+**Dev server** rodando em `http://localhost:4321`
 
 ---
 
-## ✅ Concluído (2026-07-23)
+## ✅ Concluído (2026-07-27)
 
 | Data | Resumo das mudanças |
 |------|---------------------|
-| 2026-07-23 | Criado app webstudio 'barbermen-preview' para visualização e live edit do design system; iniciado refatoração de componentes usando Tailwind e tokens de design. |
-| 2026-07-23 | Corrigido `Header.tsx`: removido imports do Next.js (`next/link`, `next/navigation`), substituído por `@astrojs/react`; implementado estado `currentPath` para active links; dev server rodando em localhost:4323. |
-| 2026-07-23 | Atualizado `astro.config.mjs` com integração `@astrojs/react`. |
-| 2026-07-23 | Criado `PLAN.md` com 12 fases detalhadas para refatoração completa. |
+| 2026-07-27 | Alinhado `@astrojs/react` com `vite@6` para corrigir erro `Missing field moduleType` no dev server |
+| 2026-07-27 | Corrigido hydration mismatch no `Header.tsx`: removido acesso direto a `window.location.pathname` durante renderização; passou a usar estado local `pathname` com `useEffect` |
+| 2026-07-27 | Migração de Next.js para Astro concluída: páginas, layouts, componentes React e estilos |
+| 2026-07-27 | Merge da branch `feat/migrate-astro` para `main` |
 
 ---
 
-## 🔥 Próximas Ações Imediatas (Prioridade Alta)
+## 🔥 Próximas Ações (Prioridade Alta)
 
-### Fase 1: Correções Críticas e Setup
-- [ ] Corrigir conflito de versão ESLint (v9 vs eslint-plugin-react-hooks v4)
-- [ ] Executar `npm audit fix` para vulnerabilidades (6 encontradas: 5 high, 1 moderate)
-- [ ] Remover diretório `app/` (Next.js pages) - não utilizado no Astro
-- [ ] Remover `next.config.ts` e `next-env.d.ts`
-- [ ] Limpar duplicatas: `components/` (raiz) vs `src/components/`
-- [ ] Verificar `Navbar.tsx` (arquivo vazio - 0 bytes)
+### Fase 1: Validação e Deploy
+- [ ] Validar build de produção (`npm run build`)
+- [ ] Validar comportamento no refresh de rotas na Vercel
+- [ ] Corrigir eventuais hydration mismatches restantes
+- [ ] Executar `npm audit fix` para vulnerabilidades
 
 ### Fase 2: Design System & WebStudio
 - [ ] Carregar skill `barbearia.md` no WebStudio (`C:\WebStudio\AI\skills\barbearia.md`)
 - [ ] Configurar template `landing-premium.md` 
 - [ ] Sincronizar tokens de cor, tipografia e motion do Barbermen com WebStudio
-- [ ] Configurar fontes locais (Playfair Display, DM Sans) em `barbermen-preview/public/fonts`
 
-### Fase 3: Componentes Críticos no WebStudio
-- [ ] **Header/Navbar** - scroll-aware, mobile drawer, logo com cores da marca
+### Fase 3: Componentes Críticos
 - [ ] **Hero Section** - eyebrow, headline com negative tracking, CTAs, stagger motion
 - [ ] **ServiceAccordion** - AnimatePresence, height spring, icon rotation
 - [ ] **Footer** - dark theme (bark), social links, contact info, WhatsApp CTA
@@ -47,9 +43,9 @@ Projeto migrando de Next.js 16 para Astro 4.0
 
 | Fase | Descrição | Prioridade | Estimativa |
 |------|-----------|------------|------------|
-| 1 | Correções Críticas e Setup | 🔴 Alta | 1-2 dias |
+| 1 | Validação e Deploy | 🔴 Alta | 1-2 dias |
 | 2 | Design System & WebStudio | 🔴 Alta | 2-3 dias |
-| 3 | Integração WebStudio → Astro | 🔴 Alta | 2-3 dias |
+| 3 | Componentes Críticos no WebStudio | 🔴 Alta | 2-3 dias |
 | 4 | Segurança | 🔴 Alta | 1-2 dias |
 | 5 | Performance | 🟡 Média | 2-3 dias |
 | 6 | Design & Framer Motion | 🔴 Alta | 3-4 dias |
@@ -83,10 +79,10 @@ npm run format
 # Segurança
 npm audit
 npm audit fix
-npm audit fix --force  # breaking changes
+npm audit fix -- force  # breaking changes
 
 # Instalar dependências
-npm install --legacy-peer-deps  # para evitar conflitos ESLint
+npm install
 ```
 
 ---
@@ -95,9 +91,7 @@ npm install --legacy-peer-deps  # para evitar conflitos ESLint
 
 - **WebStudio**: `C:\WebStudio\WEBSTUDIO.md`
 - **Barbermen Skill**: `C:\WebStudio\AI\skills\barbearia.md`
-- **Design System**: `C:\WebStudio\AI\design-system/` (colors.md, typography.md, animations.md)
-- **Barbermen Docs**: DESIGN.md, SKILL.md, AGENTS.md, CLAUDE.md (raiz do projeto)
-- **Plano Detalhado**: PLAN.md (raiz do projeto)
+- **Design System**: `AGENTS.md` (raiz do projeto)
 
 ---
 

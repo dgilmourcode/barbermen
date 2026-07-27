@@ -1,40 +1,40 @@
 # Summary of Barbermen Refactoring Session
 
-**Date**: 2026-07-23  
-**Status**: Em andamento  
-**Goal**: Continue refactoring Barbermen project using WebStudio at C:\WebStudio  
+**Date**: 2026-07-27  
+**Status**: Migração para Astro concluída e mergeada para main  
+**Goal**: Migrar projeto de Next.js para Astro 5 + React 19 + Tailwind CSS 4
 
 ## Current State
-Project is migrating from Next.js 16 to Astro 4.0.  
-- Successfully migrated `Header.tsx` to use `@astrojs/react` instead of Next.js imports  
-- Dev server now runs on `http://localhost:4323` without Next.js errors  
-- Created comprehensive `PLAN.md` with 12 detailed phases for refactoring  
-- Updated critical documentation files  
+Projeto migrado de Next.js 16 para **Astro 5.18.2** com integração **@astrojs/react 4.4.2**.
+- **Dev server**: `http://localhost:4321`
+- **Stack**: Astro 5 + React 19 + Tailwind CSS 4 + Framer Motion + Lenis
+- **Output**: Static (`astro build` gera `dist/`)
+- **Design system**: definido em `AGENTS.md`
 
 ## Key Changes Made
-- Replaced Next.js `Link` and `usePathname` with Astro equivalents  
-- Fixed active navigation styling using `currentPath` state  
-- Integrated `@astrojs/react` into `astro.config.mjs`  
-- Created comprehensive project plan (PLAN.md)  
-- Ensured WebStudio at C:\WebStudio supports Barbermen design system  
+- Removido Next.js (`app/`, `next.config.ts`, `next-env.d.ts`)
+- Criado `astro.config.mjs` com integração React e aliases
+- Migradas páginas para `src/pages/*.astro`
+- Migrados componentes React para `src/components/*.tsx`
+- Criado `src/layouts/Layout.astro` e `src/layouts/SEO.astro`
+- Corrigido hydration mismatch no `Header.tsx` removendo acesso direto a `window.location.pathname`
+- Alinhado `@astrojs/react` com `vite@6.4.3` para corrigir erro `Missing field moduleType`
+- Merge de `feat/migrate-astro` para `main`
+
+## Resolved Issues
+- Erro `Missing field moduleType` no plugin `vite-react-refresh-wrapper`
+- Hydration mismatch no `Header.tsx` causado por `window.location.pathname` no render
+- Processo preso na porta 4321
 
 ## Next Steps
-1. Implement and refine critical components in WebStudio painter  
-2. Export components to Astro-compatible React islands  
-3. Update all pages (`Home.tsx`, `Serviços/index.astro`, etc.) to use new components  
-4. Implement SEO/meta tags and accessibility best practices  
-5. Address remaining dependencies and security vulnerabilities  
-6. Run comprehensive testing pipeline  
-
-## Critical To-Do Items
-- [ ] Resolve ESLint/v9 compatibility issue  
-- [ ] Clean up Next.js leftovers (`app/`, `next.config.ts`)  
-- [ ] Implement complete navigation system  
-- [ ] Design and refine Hero, ServiceAccordion, Footer components  
-- [ ] Finalize documentation (TODO.md, SUMMARY.md, etc.)  
+1. Validar build de produção (`npm run build`)
+2. Validar comportamento no refresh de rotas na Vercel
+3. Corrigir eventuais hydration mismatches restantes
+4. Executar `npm audit fix` para vulnerabilidades
+5. Implementar componentes faltantes (Hero, ServiceAccordion, Footer)
+6. Integração com WebStudio
 
 ## Notes
-- All sensitive design tokens properly documented in DESIGN.md and SKILL.md  
-- Anti-AI checklist strictly enforced (handcrafted aesthetic, spacing, motion)  
-- WebStudio integration enables visual development paradigm shift  
-- Project adheres to Barbermen brand essence: "Tradição meets modernidade. Artesanal, não industrial."
+- Sem backend — agendamentos via WhatsApp
+- Design system e skill documentados em `AGENTS.md`
+- Anti-AI checklist aplicado (handcrafted aesthetic, spacing, motion)
