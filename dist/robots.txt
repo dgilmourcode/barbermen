@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /_astro/
-Disallow: /dist/
-
-Sitemap: https://barbermen.com.br/sitemap.xml
