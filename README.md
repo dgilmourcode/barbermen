@@ -45,3 +45,5 @@ Deploy na Vercel. O build gera arquivos estáticos em `dist/`.
 
 - Sem backend — agendamentos via WhatsApp
 - Design system e skill documentados em `AGENTS.md`
+- Galeria com carrossel infinito e lightbox na home page
+- Página de serviços com accordion e imagens sponsor

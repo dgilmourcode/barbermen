@@ -152,8 +152,9 @@ bg-cream       → #FAF9F6
 bg-cream-dark  → #F0EDE6
 text-bark      → #1C1710
 text-bark-muted → #7A6E5E
-text-brass     → #8B6914
-text-gold      → #C4972A
+text-red       → #991B1B
+text-red-light → #B91C1C
+text-cream     → #FAF9F6
 ```
 
 ## Fontes

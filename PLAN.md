@@ -37,6 +37,7 @@ Migrar o projeto Barbermen de Next.js 16 para Astro 4.0 mantendo todas as funcio
 - [x] Converter app/galeria (criar nova página) para src/pages/galeria.astro
 - [x] Converter app/contato/page.tsx para src/pages/contato.astro
 - [x] Converter app/agendar/page.tsx para src/pages/agendar.astro
+- [x] Restaurar galeria (ProfessionalGallery) na home page
 
 ### Fase 4: Integração e Funcionalidades
 - [x] Implementar navegation.ts equivalente em Astro

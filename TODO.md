@@ -17,6 +17,13 @@ Projeto migrado para **Astro 5** + **React 19** + **Tailwind CSS 4**
 | 2026-07-28 | Restaurado `ProfessionalGallery` (carrossel infinito com lightbox) que foi perdido na migração Astro |
 | 2026-07-28 | Renomeado "Nossos Serviços" → "Cortes Populares" na home e "Nosso Trabalho" → "Momentos de Barbermen" na galeria |
 | 2026-07-28 | Renomeado "Nossos Serviços" → "Cortes de Estilo e Tratamentos Premium" na página de serviços |
+| 2026-07-28 | Adicionado "Conheça o Trabalho Barbermen" como título da galeria na home |
+| 2026-07-28 | Substituído imagens duplicadas na galeria (gallery-4, gallery-6, gallery-7) com novas fotos do Unsplash |
+| 2026-07-28 | Adicionadas novas imagens à galeria: Corte Tradicional (gallery-9), Hidratação Premium (gallery-11), Hidratação Clássica (gallery-12), Barba com Máquina (gallery-13) |
+| 2026-07-28 | Adicionado serviço "Hidratação Premium" na página de serviços |
+| 2026-07-28 | Renomeado "Hidratação Capilar" → "Hidratação Clássica" na página de serviços |
+| 2026-07-28 | Aumentado espaçamento entre PageHero e imagens sponsor na página de serviços |
+| 2026-07-28 | Ajustada altura da galeria (aspect ratio e padding) |
 
 ---
 

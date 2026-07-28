@@ -20,6 +20,16 @@ Projeto migrado de Next.js 16 para **Astro 5.18.2** com integração **@astrojs/
 - Corrigido hydration mismatch no `Header.tsx` removendo acesso direto a `window.location.pathname`
 - Alinhado `@astrojs/react` com `vite@6.4.3` para corrigir erro `Missing field moduleType`
 - Merge de `feat/migrate-astro` para `main`
+- Restaurado `ProfessionalGallery` (carrossel infinito com lightbox) que foi perdido na migração Astro
+- Renomeado "Nossos Serviços" → "Cortes Populares" na home
+- Renomeado "Nosso Trabalho" → "Momentos de Barbermen" na galeria
+- Renomeado "Nossos Serviços" → "Cortes de Estilo e Tratamentos Premium" na página de serviços
+- Adicionado "Conheça o Trabalho Barbermen" como título da galeria
+- Substituído imagens duplicadas na galeria com novas fotos do Unsplash
+- Adicionadas novas imagens à galeria: Corte Tradicional, Hidratação Premium, Hidratação Clássica, Barba com Máquina
+- Adicionado serviço "Hidratação Premium" na página de serviços
+- Renomeado "Hidratação Capilar" → "Hidratação Clássica" na página de serviços
+- Ajustada altura da galeria e espaçamento na página de serviços
 
 ## Resolved Issues
 - Erro `Missing field moduleType` no plugin `vite-react-refresh-wrapper`
@@ -31,8 +41,7 @@ Projeto migrado de Next.js 16 para **Astro 5.18.2** com integração **@astrojs/
 2. Validar comportamento no refresh de rotas na Vercel
 3. Corrigir eventuais hydration mismatches restantes
 4. Executar `npm audit fix` para vulnerabilidades
-5. Implementar componentes faltantes (Hero, ServiceAccordion, Footer)
-6. Integração com WebStudio
+5. Integração com WebStudio
 
 ## Notes
 - Sem backend — agendamentos via WhatsApp
