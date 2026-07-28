@@ -14,7 +14,9 @@ Projeto migrado para **Astro 5** + **React 19** + **Tailwind CSS 4**
 | 2026-07-27 | Alinhado `@astrojs/react` com `vite@6` para corrigir erro `Missing field moduleType` no dev server |
 | 2026-07-27 | Corrigido hydration mismatch no `Header.tsx`: removido acesso direto a `window.location.pathname` durante renderização; passou a usar estado local `pathname` com `useEffect` |
 | 2026-07-27 | Migração de Next.js para Astro concluída: páginas, layouts, componentes React e estilos |
-| 2026-07-27 | Merge da branch `feat/migrate-astro` para `main` |
+| 2026-07-28 | Restaurado `ProfessionalGallery` (carrossel infinito com lightbox) que foi perdido na migração Astro |
+| 2026-07-28 | Renomeado "Nossos Serviços" → "Cortes Populares" na home e "Nosso Trabalho" → "Momentos de Barbermen" na galeria |
+| 2026-07-28 | Renomeado "Nossos Serviços" → "Cortes de Estilo e Tratamentos Premium" na página de serviços |
 
 ---
 

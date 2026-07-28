@@ -58,7 +58,7 @@ Every page must feel custom made.
 - once: true em todos os viewport
 
 ## Tech Stack
-- Next.js 16, Tailwind 4, TypeScript
+- Astro 5, React 19, Tailwind 4, TypeScript
 - Framer Motion para animações
 - Sem backend — agendamentos via WhatsApp
 

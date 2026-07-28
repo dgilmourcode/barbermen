@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from '@/components/Link';
+import ProfessionalGallery from '@/components/ProfessionalGallery';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -113,7 +114,7 @@ export default function Home() {
           >
             <span className="text-xs font-medium tracking-[0.25em] uppercase text-brass mb-3 block">Serviços</span>
             <h2 className="font-[family-name:var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-semibold text-bark tracking-tight">
-              Nossos Serviços
+              Cortes Populares
             </h2>
             <div className="w-12 h-px bg-red mx-auto mt-5" />
           </motion.div>
@@ -191,6 +192,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* GALERIA */}
+      <ProfessionalGallery />
 
       {/* CTA */}
       <section className="py-24 bg-bark">

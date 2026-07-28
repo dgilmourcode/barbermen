@@ -42,7 +42,7 @@ const tratamentoIcon = (
 export default function ServicosClient() {
   return (
     <>
-      <PageHero title="Nossos Serviços" subtitle="Barbearia" />
+      <PageHero title="Cortes de Estilo e Tratamentos Premium" subtitle="Barbearia" />
 
       {/* SPONSOR - Fotos quadradas */}
       <section className="py-8 bg-cream-dark border-y border-bark/5">
