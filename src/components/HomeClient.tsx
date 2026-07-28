@@ -166,7 +166,7 @@ export default function Home() {
                 combinando técnicas tradicionais com tendências modernas.
               </p>
               <Link href="/quem-somos" className="text-sm font-medium text-red hover:text-red-dark transition-colors duration-200">
-                Conheça nossa história →
+                Conheça o Trabalho Barbermen →
               </Link>
             </motion.div>
 
