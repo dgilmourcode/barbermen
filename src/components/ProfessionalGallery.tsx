@@ -16,6 +16,7 @@ const galleryImages = [
   { src: '/images/gallery-10.jpg', title: 'Corte Infantil', category: 'Cabelo' },
   { src: '/images/gallery-11.jpg', title: 'Hidratação Premium', category: 'Tratamento' },
   { src: '/images/gallery-12.jpg', title: 'Hidratação Clássica', category: 'Tratamento' },
+  { src: '/images/gallery-13.jpg', title: 'Barba com Máquina', category: 'Barba' },
 ];
 
 export default function ProfessionalGallery() {
