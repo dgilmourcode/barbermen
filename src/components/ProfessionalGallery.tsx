@@ -64,7 +64,7 @@ export default function ProfessionalGallery() {
 
   return (
     <>
-      <section className="py-12 bg-cream overflow-hidden">
+      <section className="py-14 bg-cream overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 mb-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -86,7 +86,7 @@ export default function ProfessionalGallery() {
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
-          <div className="relative overflow-hidden aspect-[2.5/1] bg-bark/5 border border-bark/8">
+          <div className="relative overflow-hidden aspect-[2.2/1] bg-bark/5 border border-bark/8">
             <AnimatePresence initial={false} custom={direction} mode="wait">
               <motion.div
                 key={current}
