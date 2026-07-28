@@ -45,7 +45,7 @@ export default function ServicosClient() {
       <PageHero title="Cortes de Estilo e Tratamentos Premium" subtitle="Barbearia" />
 
       {/* SPONSOR - Fotos quadradas */}
-      <section className="py-8 bg-cream-dark border-y border-bark/5">
+      <section className="py-12 bg-cream-dark border-y border-bark/5">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex gap-3 justify-center flex-wrap md:flex-nowrap">
             {sponsorImages.map((img, i) => (
