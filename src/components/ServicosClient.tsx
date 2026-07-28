@@ -108,7 +108,7 @@ export default function ServicosClient() {
             icon={tratamentoIcon}
             services={[
               { name: 'Hidratação Premium', description: 'Tratamento intensivo com produtos profissionais para hidratação profunda, brilho e maciez.', time: '45 min', price: 'R$ 85' },
-              { name: 'Hidratação Capilar', description: 'Tratamento profundo para repor umidade, nutrientes e queratina. Cabelos saudáveis, com brilho e macios.', time: '30 min', price: 'R$ 45' },
+              { name: 'Hidratação Clássica', description: 'Tratamento profundo para repor umidade, nutrientes e queratina. Cabelos saudáveis, com brilho e macios.', time: '30 min', price: 'R$ 45' },
               { name: 'Lavagem Especial', description: 'Lavagem com shampoos e condicionadores premium da linha Keune 1922.', time: '20 min', price: 'R$ 35' },
               { name: 'Sobrancelha', description: 'Design e modelagem de sobrancelha com navalha e pinça.', time: '15 min', price: 'R$ 25' },
             ]}
