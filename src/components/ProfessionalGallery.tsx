@@ -75,7 +75,7 @@ export default function ProfessionalGallery() {
           >
             <span className="text-xs font-medium tracking-[0.25em] uppercase text-brass mb-3 block">Galeria</span>
             <h2 className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,3.5vw,2.8rem)] font-semibold text-bark tracking-tight">
-              Marcaram Presença na Barbermen
+              Conheça o Trabalho Barbermen
             </h2>
             <div className="w-12 h-px bg-red mx-auto mt-5" />
           </motion.div>
