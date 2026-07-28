@@ -13,6 +13,7 @@ const galleryImages = [
   { src: '/images/gallery-7.jpg', title: 'Navalha Clássica', category: 'Barba' },
   { src: '/images/gallery-8.jpg', title: 'Sobrancelha', category: 'Detalhe' },
   { src: '/images/gallery-9.jpg', title: 'Corte Tradicional', category: 'Cabelo' },
+  { src: '/images/gallery-10.jpg', title: 'Corte Infantil', category: 'Cabelo' },
 ];
 
 export default function ProfessionalGallery() {
